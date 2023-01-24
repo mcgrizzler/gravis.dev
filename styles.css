@@ -1,103 +1,96 @@
-body{
-    color: white;
-    background-color: black;
+body {
+    background-color: #333333;
+    margin: 2% 2%;
 }
 
-/* Bordered form */
-form {
-    border: 3px solid #f1f1f1;
-  }
-  
-  /* Full-width inputs */
-  input[type=text], input[type=password] {
-    width: 40%;
-    padding: 12px 20px;
-    margin: 8px 30%;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    align-self: center;
-  }
-  
-  .inputType {
-      color: black;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 20px;
-      margin: 8px 30%;
-  }
-  
-  .rememberButton {
-      margin: 0 0 0 46.5%;
-  }
-  
-  .rememberButtonText {
-      color: black;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 15px;
-  }
-  
-  /* Set a style for all buttons */
-  button {
-    background-color: #4CAF50;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 14px 20px;
-    margin: 8px 40%;
-    border: none;
-    cursor: pointer;
-    width: 20%;
-  }
-  
-  /* Add a hover effect for buttons */
-  button:hover {
-    opacity: 0.8;
-  }
-  
-  /* Extra style for the cancel button (red) */
-  .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-    margin: 0 0 0 47%;
-  }
-  
-  /* Center the avatar image inside this container */
-  .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-  }
-  
-  /* Avatar image */
-  img.avatar {
-    width: 15%;
+img {
     border-radius: 50%;
-  }
-  
-  /* Add padding to containers */
-  .container {
-    padding: 16px;
-  }
-  
-  /* The "Forgot password" text */
-  span.psw {
-    float: right;
-    padding-top: 16px;
-  
-    color: black;
+    max-width:100%;
+    max-height:100%;
+}
+
+.header {
+    color: #E6D8AB;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
+}
+
+.avatar {
+    width: 275px;
+    height: 275px;
+    margin: -265px 5px;
+}
+
+.colorGridTable {
+    margin: 255px 315px;
+    resize: none;
+}
+
+.colorGrid {
+    width: 35px;
+    height: 25px;
+}
+
+.infoHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #E6D8AB;
+    margin: -10px 315px;
+    white-space:nowrap;
+}
+
+.info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #E6D8AB;
+    margin: 10px 315px;
+    white-space:nowrap;
+}
+
+.footer {
+    color: #E6D8AB;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: fixed; left:32px; top:475px;
+}
+
+a:link {
+    color: #3C7A7C;
+    background-color: transparent;
+    text-decoration: none;
   }
   
-  /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
-    span.psw {
-      display: block;
-      float: none;
+  a:visited {
+    color: #3C7A7C;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #CE7991;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: #3C7A7C;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+.blink {
+    animation: blink 1s steps(1, end) infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
     }
-    .cancelbtn {
-      width: 100%;
+    50% {
+      opacity: 0;
     }
-  } 
+    100% {
+      opacity: 1;
+    }
+  }
+  
